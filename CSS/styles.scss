@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    font-family: "Arial";
+    padding: 0px;
+
+    header {
+        background-color: rgb(255, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+    
+        #logo__pokemon {
+            width: 30%;
+            height: auto;
+            padding: 30px;
+        }
+    }
+
+    .search__container {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            background-color: rgb(254, 202, 56);
+            color: rgb(255, 255, 255);
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fFFF;
+            color: rgb(254, 202, 56);
+        }
+
+        input {
+            margin: 5px;
+        }
+    }
+
+    #pokemon__grid {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .pokemon__card {
+        background-color: rgb(248, 248, 248);
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0px 4px 8px black;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        transition: all .25s ease;
+
+        .pokemon__info {
+            text-transform: capitalize;
+            margin: 10px;
+            
+           
+        }
+
+        .types__title {
+            font-size: 12px;
+        }
+
+        .pokemon__types {
+            
+            span {
+                margin: 5px;
+                padding: 5px;
+                background-color: #00d2fb;
+                border-radius: 15px;
+                text-transform: uppercase;
+                font-size: 10px;
+                color: #FFF;
+                font-weight: 600;
+            }
+
+            .grass {
+                background-color: #4ef16e;
+            }
+
+            .poison {
+                background-color: #a881f0;
+            }
+
+            .fire {
+                background-color: #f1974e;
+            }
+
+            .ground {
+                background-color: #895403;
+            }
+        }
+
+        
+
+        .pokemon__abilities {
+            display: flex;
+            flex-direction: column;
+            
+            span {
+                margin: 5px;
+                padding: 5px;
+                background-color: #f15cff;
+                border-radius: 15px;
+                text-transform: uppercase;
+                font-size: 10px;
+                color: #FFF;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .abilities__title {
+        font-size: 12px;
+    }
+
+    .pokemon__card:hover {
+        scale: 1.05;
+    }
+}
+
+
+

@@ -1,0 +1,99 @@
+body {
+  margin: 0px;
+  font-family: "Arial";
+  padding: 0px;
+}
+body header {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+body header #logo__pokemon {
+  width: 30%;
+  height: auto;
+  padding: 30px;
+}
+body .search__container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+body .search__container button {
+  background-color: rgb(254, 202, 56);
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  cursor: pointer;
+}
+body .search__container button:hover {
+  background-color: white;
+  color: rgb(254, 202, 56);
+}
+body .search__container input {
+  margin: 5px;
+}
+body #pokemon__grid {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+body .pokemon__card {
+  background-color: rgb(248, 248, 248);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 4px 8px black;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.25s ease;
+}
+body .pokemon__card .pokemon__info {
+  text-transform: capitalize;
+  margin: 10px;
+}
+body .pokemon__card .types__title {
+  font-size: 12px;
+}
+body .pokemon__card .pokemon__types span {
+  margin: 5px;
+  padding: 5px;
+  background-color: #00d2fb;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #FFF;
+  font-weight: 600;
+}
+body .pokemon__card .pokemon__types .grass {
+  background-color: #4ef16e;
+}
+body .pokemon__card .pokemon__types .poison {
+  background-color: #a881f0;
+}
+body .pokemon__card .pokemon__types .fire {
+  background-color: #f1974e;
+}
+body .pokemon__card .pokemon__types .ground {
+  background-color: #895403;
+}
+body .pokemon__card .pokemon__abilities {
+  display: flex;
+  flex-direction: column;
+}
+body .pokemon__card .pokemon__abilities span {
+  margin: 5px;
+  padding: 5px;
+  background-color: #f15cff;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #FFF;
+  font-weight: 600;
+}
+body .abilities__title {
+  font-size: 12px;
+}
+body .pokemon__card:hover {
+  scale: 1.05;
+}/*# sourceMappingURL=styles.css.map */
